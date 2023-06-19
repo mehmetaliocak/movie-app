@@ -9,7 +9,7 @@ data class Movie(
     val id: Long,
     val title: String,
     @SerialName("poster_path")
-    private val posterPath: String?,
+    val posterPath: String?,
     val overview: String,
     @SerialName("release_date")
     val releaseDate: String?,

@@ -7,10 +7,10 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Cast(
     val id: Long,
-    val name : String,
+    val name: String,
     val character: String,
     @SerialName("profile_path")
-    private val profilePath : String?,
+    val profilePath: String?,
 ) {
 
     fun profilePhotoURL(): String {

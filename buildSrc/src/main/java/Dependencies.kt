@@ -6,8 +6,17 @@ object Versions {
     const val koinAndroidCompose = "3.4.4"
     const val coroutines = "1.6.4"
     const val serialization = "1.5.0"
-    const val kspPlugin = "1.9.0-Beta-1.0.11"
-    const val kmpNativeCoroutinesVersion = "1.0.0-ALPHA-10-kotlin-1.9.0-Beta"
+    const val kspPlugin = "1.8.21-1.0.11"
+    const val kmpNativeCoroutinesVersion = "1.0.0-ALPHA-10"
+
+    const val activityCompose = "1.7.1"
+    const val lifecycleRuntimeKtx = "2.6.1"
+    const val lifecycleViewmodelKtx = "2.6.1"
+
+    const val compose = "1.4.3"
+    const val composeCompiler = "1.4.7"
+    const val navCompose = "2.5.3"
+    const val composeMaterial3 = "1.1.0"
 }
 
 object AndroidSdk {
@@ -37,4 +46,22 @@ object Deps {
         const val serializationJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.serialization}"
     }
 
+    object AndroidX {
+        const val lifecycleRuntimeCompose = "androidx.lifecycle:lifecycle-runtime-compose:${Versions.lifecycleRuntimeKtx}"
+        const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntimeKtx}"
+        const val lifecycleViewmodelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleViewmodelKtx}"
+        const val activityCompose = "androidx.activity:activity-compose:${Versions.activityCompose}"
+    }
+
+    object Compose {
+        const val compiler = "androidx.compose.compiler:compiler:${Versions.composeCompiler}"
+        const val ui = "androidx.compose.ui:ui:${Versions.compose}"
+        const val uiGraphics = "androidx.compose.ui:ui-graphics:${Versions.compose}"
+        const val navigation = "androidx.navigation:navigation-compose:${Versions.navCompose}"
+        const val coilCompose = "io.coil-kt:coil-compose:2.0.0"
+        const val material = "androidx.compose.material:material:${Versions.compose}"
+        const val uiTooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
+        const val pagingRuntime = "androidx.paging:paging-runtime:3.1.1"
+        const val pagingCompose = "androidx.paging:paging-compose:1.0.0-alpha17"
+    }
 }
